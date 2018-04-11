@@ -11,3 +11,17 @@
 * Use main() function to test your solution.
 ===================================================
 """
+
+def gcd(a,b):
+    a_apsolutno = abs(a)
+    b_apsolutno = abs(b)
+
+    z=abs(a_apsolutno - b_apsolutno)
+
+    if z==0:
+        return a_apsolutno
+    else:
+
+        return gcd(z,min(a_apsolutno,b_apsolutno))
+
+print(gcd(-12,8))
